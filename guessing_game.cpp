@@ -18,8 +18,12 @@ int main()
     {
         cout << "Enter your guess:";
         cin >> guess;
-
-        if(guess > secret)
+        
+        if(guess > 100)
+        {
+            cout << " Invalid guess " << endl;
+        }
+        else if(guess > secret)
         {
             cout << " Too High Try Again !!" << endl ;
         }
@@ -37,3 +41,4 @@ int main()
 
     return 0;
 }   
+
